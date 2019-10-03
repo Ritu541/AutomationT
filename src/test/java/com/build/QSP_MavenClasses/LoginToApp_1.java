@@ -19,9 +19,7 @@ public class LoginToApp_1 extends TestBase {
 
 		driver.findElement(By.xpath(OR.getProperty("signin3"))).click();
 		test.log(LogStatus.PASS, "signin3 has been clicked");
-		
-		//driver.findElement(By.xpath(OR.getProperty("Inputbox"))).sendKeys(config.getProperty("email3"));
-		
+			
 		driver.findElement(By.xpath(OR.getProperty("Inputbox"))).sendKeys(testData.get("Email_ID"));
 		test.log(LogStatus.PASS, "Inputbox has been entered");	
 	}
