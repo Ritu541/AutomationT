@@ -22,16 +22,10 @@ public class KeyboardEvent {
 				 
 				driver.manage().window().maximize();
 				
-			   // driver.manage().timeouts().implicitlyWait(10L, TimeUnit.SECONDS);	
-			  
-				//driver.get("http://jqueryui.com/spinner/");	
-				
 				driver.get("http://gmail.com");	
 			   
 			    System.out.println("Browser has been launched and user redirected to Application");
-			
-			  //  driver.switchTo().frame(driver.findElement(By.tagName("iframe")));
-				
+							
 			    driver.findElement(By.xpath("//*[@id='yDmH0d']")).click();
 			    
 				//rb.keyPress(KeyEvent.VK_CONTROL); 
@@ -45,8 +39,6 @@ public class KeyboardEvent {
 				  rb.keyRelease(KeyEvent.VK_CONTROL); 
 				  rb.keyRelease(KeyEvent.VK_SHIFT);
 				  rb.keyRelease(KeyEvent.VK_I);
-				 
-			  
 				
 				// driver.findElement(By.xpath("//input[@id='spinner']")).click();
 				 
@@ -54,7 +46,6 @@ public class KeyboardEvent {
 				  
 				// act.contextClick().perform();
 				 
-			    
 				 act.sendKeys(Keys.chord(Keys.CONTROL +"a")).perform();
 				 act.sendKeys(Keys.chord(Keys.CONTROL +"c")).perform();
 				 
