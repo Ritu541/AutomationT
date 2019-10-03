@@ -17,6 +17,7 @@ public class LoginToApp_1 extends TestBase {
 		
 		test= extent.startTest("login");
 
+		driver.manage().window().maximize();
 		driver.findElement(By.xpath(OR.getProperty("signin3"))).click();
 		test.log(LogStatus.PASS, "signin3 has been clicked");
 			
