@@ -27,9 +27,7 @@ static	WebDriver driver = new ChromeDriver();
 		Assert.assertEquals(actual1, expected1);
 		
 		System.out.println("11 has been printed");
-		
-		
-//		driver.get("https://mail.google.com/mail/");
+				
 		driver.get("https://www.timeanddate.com/worldclock/");
 		driver.manage().window().maximize();
 		String verify =driver.getTitle();

@@ -13,11 +13,8 @@ public class Test_dropdown {
 
 	driver= new ChromeDriver();
 	
-//	driver.get("https://www.toolsqa.com/automation-practice-form/");
 	driver.get("https://www.facebook.com");
 	
-//	driver.findElement(By.xpath("//table[@class='zebra fw tb-theme']")).click();
-//	Select sel =new Select(driver.findElement(By.xpath("//a[contains(text(), 'Accra')]")));
 //	sel.selectByIndex(0);
 	
 	Select selecetDay = new Select(driver.findElement(By.xpath("//select[@id='day']")));
